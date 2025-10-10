@@ -122,9 +122,9 @@ public class ConsumerTest {
         // Create a request body
         Map<String, Object> reqBody = new HashMap<>();
         reqBody.put("id", 123);
-        reqBody.put("firstName", "Saahil");
-        reqBody.put("lastName", "Sharma");
-        reqBody.put("email", "saahil@example.com");
+        reqBody.put("firstName", "Vinitha");
+        reqBody.put("lastName", "Pabolu");
+        reqBody.put("email", "Vinitha@example.com");
 
         // Send request, get response, assert response
         given().baseUri(mockServer.getUrl() + "/api/users").headers(headers).body(reqBody).log().all().
@@ -163,3 +163,4 @@ public class ConsumerTest {
     }
 
 }
+
