@@ -54,9 +54,9 @@ public class ConsumerTest {
         // Create the JSON body
         DslPart reqResBody = new PactDslJsonBody()
                 .numberType("id", 1)
-                .stringType("firstName", "Saahil")
-                .stringType("lastName", "Sharma")
-                .stringType("email", "saahil@example.com");
+                .stringType("firstName", "Vinitha")
+                .stringType("lastName", "Pabolu")
+                .stringType("email", "Vinitha@example.com");
         // Create the contract(Pact)
         return builder.given("GET Request")
                 .uponReceiving("A request to get a user")
@@ -161,4 +161,5 @@ public class ConsumerTest {
                 when().get().
                 then().statusCode(200).log().all();
     }
+
 }
